@@ -4,8 +4,8 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingLeft="14dp"
-    android:paddingTop="10dp">
+    android:paddingLeft="0dp"
+    android:paddingTop="8dp">
 
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -19,7 +19,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/contact_name2"
+            android:id="@+id/contact_name"
             android:text="Person"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -31,14 +31,14 @@
 
             />
         <TextView
-            android:id="@+id/latest_message2"
+            android:id="@+id/latest_message"
             android:text="Message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="italic"
             android:textColor="@android:color/black"
             android:paddingLeft="10dp"
-            android:layout_below="@id/contact_name2"
+            android:layout_below="@id/contact_name"
             android:textSize="12sp"/>
     </RelativeLayout>
     <RelativeLayout

@@ -58,8 +58,8 @@ public class base extends BaseAdapter {
 //            status2.addAll(hs);
             v = View.inflate(d, R.layout.cont, null);
             vh = new ViewHolder();
-            vh.text1 = (TextView) v.findViewById(R.id.contact_name2);
-            vh.text2 = (TextView) v.findViewById(R.id.latest_message2);
+            vh.text1 = (TextView) v.findViewById(R.id.contact_name);
+            vh.text2 = (TextView) v.findViewById(R.id.latest_message);
 
 
 

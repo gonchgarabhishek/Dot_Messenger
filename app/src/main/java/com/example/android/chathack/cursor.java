@@ -29,8 +29,8 @@ public class cursor extends CursorAdapter {
     @Override
     public void bindView(View view, Context context, Cursor cursor) {
         c1=cursor;
-        TextView name = (TextView) view.findViewById(R.id.contact_name2);
-        TextView phone = (TextView) view.findViewById(R.id.latest_message2);
+        TextView name = (TextView) view.findViewById(R.id.contact_name);
+        TextView phone = (TextView) view.findViewById(R.id.latest_message);
         String na = cursor.getString(cursor.getColumnIndexOrThrow("name"));
         String ph = cursor.getString(cursor.getColumnIndexOrThrow("phone"));
 name.setText(na);

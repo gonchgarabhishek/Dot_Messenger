@@ -97,10 +97,8 @@ RecyclerView recyclerView;
 
 
             FirebaseRecyclerAdapter<cont, viewholder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<cont, viewholder>(
-                    cont.class, R.layout.contact_layout, viewholder.class, mRef1
-
-
-            ) {
+                    cont.class, R.layout.cont, viewholder.class, mRef1)
+            {
                 @Override
                 protected void populateViewHolder(viewholder viewHolder, final cont model, int position) {
                     final String key=getRef(position).getKey();
