@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ChatHack</string>
+    <string name="title_activity_fire_base">FireBaseActivity</string>
+</resources>

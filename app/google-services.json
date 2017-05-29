@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "789608835852",
+    "firebase_url": "https://chathack-25f91.firebaseio.com",
+    "project_id": "chathack-25f91",
+    "storage_bucket": "chathack-25f91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789608835852:android:d851547a201e7300",
+        "android_client_info": {
+          "package_name": "com.example.android.chathack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789608835852-kv3e4kv7mc55do4cokm3ll37pps74i0t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.chathack",
+            "certificate_hash": "7b6aba1efe6886c9bae47bb16772e0bda9675431"
+          }
+        },
+        {
+          "client_id": "789608835852-5ql2if0jqg5udm9bm3cpq5fcd7shcq8b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.chathack",
+            "certificate_hash": "0f128a3df7b9bfd42a4bc874b542cf7ab4757a7a"
+          }
+        },
+        {
+          "client_id": "789608835852-h30ob5ql7hpit8momt5rhkr1vqoovciu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBafPS6-jwdUScWIj0bxlBk4j3ysSQ8an4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789608835852-h30ob5ql7hpit8momt5rhkr1vqoovciu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
