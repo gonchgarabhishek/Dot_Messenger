@@ -1,0 +1,13 @@
+Please change the values from #NOT FIXED to #FIXED -- after fixing and updating them
+
+Crashes after registration  (NOT FIXED)
+
+Contacts taking too long to load (NOT FIXED)
+-> preferably to load them during registration
+
+
+
+
+Points :-
+
+OTP not working (probably coz of lack of balance, so switched to normal firebase registration with emailAndPassword)
