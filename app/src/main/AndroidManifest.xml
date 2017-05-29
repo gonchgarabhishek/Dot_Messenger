@@ -11,6 +11,7 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
 
     <application
         android:name=".ChatHack"
@@ -43,6 +44,8 @@
             android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".EnterDetails" />
         <activity android:name=".MainActivity"/>
+        <activity android:name=".IncomingVideoCallScreenActivity"/>
+        <activity android:name=".VideoCallScreenActivity"/>
         <activity android:name=".launcher"
             android:label="@string/app_name"
             android:theme="@style/SplashTheme">

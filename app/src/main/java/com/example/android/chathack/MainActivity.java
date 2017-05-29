@@ -142,7 +142,8 @@ RecyclerView recyclerView;
             setContentView(R.layout.activity_main);
 
             token = FirebaseInstanceId.getInstance().getToken();
-
+            ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.RECORD_AUDIO},100);
+            ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.CAMERA},240);
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_CONTACTS}, PERMISSIONS_REQUEST_READ_CONTACTS);
         }
 

@@ -70,6 +70,7 @@ String phone;
     private Call call;
     TextClock time;
     private static final String URL = "https://dot.fwd.wf/DOT/sendSinglePush.php";
+    int PERMISSION_CAMERA = 1;
     FirebaseRecyclerAdapter<message, viewholder> firebaseRecyclerAdapter;
     int a;
     FirebaseAuth mauth;
@@ -85,7 +86,7 @@ private ImageView mSend;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Intent in=getIntent();
-        ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.RECORD_AUDIO},1);
+
 
         phone=in.getStringExtra("Phone");
         mynum=in.getStringExtra("mynum");
@@ -219,6 +220,31 @@ View view;
                 ActivityCompat.requestPermissions(this, new String[]{e.getRequiredPermission()}, 0);
             }
 
+        }
+
+        if(a==R.id.action_video){
+
+
+
+
+            try{
+
+                Call call = getSinchServiceInterface().callUserVideo(phone);
+                if (call == null) {
+                    // Service failed for some reason, show a Toast and abort
+                    Toast.makeText(this, "Service is not started. Try stopping the service and starting it again before "
+                            + "placing a call.", Toast.LENGTH_LONG).show();
+
+                }
+                String callId = call.getCallId();
+
+                Intent callScreen = new Intent(this, VideoCallScreenActivity.class);
+                callScreen.putExtra(SinchService.CALL_ID, callId);
+                startActivity(callScreen);
+
+            }catch (MissingPermissionException e) {
+                ActivityCompat.requestPermissions(this, new String[]{e.getRequiredPermission()}, 0);
+            }
         }
         return true;
     }
